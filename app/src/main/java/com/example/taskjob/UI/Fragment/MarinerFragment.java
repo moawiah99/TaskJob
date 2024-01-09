@@ -11,11 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.taskjob.Adapter.ItemAdapter;
-import com.example.taskjob.ListOfImage;
-import com.example.taskjob.R;
 import com.example.taskjob.databinding.FragmentMarinerBinding;
-
-import java.util.ArrayList;
 
 
 public class MarinerFragment extends Fragment {

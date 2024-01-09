@@ -57,8 +57,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         super.onViewCreated(view, savedInstanceState);
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
-
         getLastLocation();
+
+
 
     }
 
@@ -78,7 +79,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                     SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
                     supportMapFragment.getMapAsync(MapFragment.this);
 
-                    Toast.makeText(getActivity(), currentlocation.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

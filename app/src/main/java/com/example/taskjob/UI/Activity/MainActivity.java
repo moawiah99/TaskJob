@@ -3,7 +3,6 @@ package com.example.taskjob.UI.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.graphics.Insets;
 import android.os.Bundle;
 
 import com.example.taskjob.Adapter.ContactAdapter;
@@ -25,16 +24,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         addNameOfTab();
-        initialization();
+        initialize();
 
 
     }
 
-    private void initialization() {
+    private void initialize() {
         Fragment fragment = new MapFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
 
@@ -57,5 +58,6 @@ public class MainActivity extends AppCompatActivity {
         list.add("Polls");
         list.add("Jobs");
     }
+
 
 }
